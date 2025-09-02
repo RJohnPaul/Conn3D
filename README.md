@@ -1,5 +1,9 @@
 # Conn3D (Connection 3D)
 
+![Home Dashboard](https://github.com/RJohnPaul/Healthlink/blob/53fa1bf4726e9299f1f30362dd13c7d643e92c7f/Template%20Example%20(3).png)
+
+---
+
 An immersive, mobile‑first Augmented Reality (AR) virtual electronics lab designed to bridge the gap between theoretical knowledge and practical engineering education.
 
 <p align="center">
