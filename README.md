@@ -2,26 +2,40 @@
 
 An immersive, mobile‑first Augmented Reality (AR) virtual electronics lab designed to bridge the gap between theoretical knowledge and practical engineering education.
 
-</div>
+<p align="center">
+	<a href="https://nextjs.org"><img alt="Next.js" src="https://img.shields.io/badge/Next.js-15-black" /></a>
+	<img alt="React" src="https://img.shields.io/badge/React-19-149eca" />
+	<img alt="Tailwind" src="https://img.shields.io/badge/TailwindCSS-4-38bdf8" />
+	<img alt="Status" src="https://img.shields.io/badge/Status-Alpha-orange" />
+	<img alt="Node" src="https://img.shields.io/badge/Node-%3E=18.x-339933" />
+	<img alt="License" src="https://img.shields.io/badge/License-TBD-lightgrey" />
+	<img alt="PRs" src="https://img.shields.io/badge/PRs-Welcome-success" />
+</p>
+
+<p align="center"><i>Project status: Early content and architectural scaffold. Core AR & simulation layers not yet implemented.</i></p>
 
 ---
 
 ## Table of Contents
-1. Overview  
-2. Vision  
-3. Core Principles  
-4. Features  
-5. Services Offered  
-6. Technology Stack  
-7. Architecture & Structure  
-8. UI Components  
-9. Getting Started (Local Development)  
-10. Available Scripts  
-11. Deployment  
-12. Roadmap  
-13. Contributing  
-14. FAQs  
-15. License  
+1. [Overview](#1-overview)  
+2. [Vision](#2-vision)  
+3. [Core Principles](#3-core-principles)  
+4. [Features](#4-features-current--in-progress)  
+5. [Services Offered](#5-services-offered-concept-scope)  
+6. [Technology Stack](#6-technology-stack)  
+7. [Architecture & Structure](#7-architecture--structure)  
+8. [UI Components](#8-ui-components-high-level-responsibilities)  
+9. [Getting Started](#9-getting-started-local-development)  
+10. [Available Scripts](#10-available-scripts)  
+11. [Deployment](#11-deployment)  
+12. [Roadmap](#12-roadmap-planned-enhancements)  
+13. [Accessibility](#accessibility-checklist)  
+14. [Performance Strategy](#performance-strategy)  
+15. [Contribution Guide](#13-contributing)  
+16. [FAQs](#14-faqs-sample)  
+17. [License](#15-license)  
+18. [Team](#team-nari-kootam)  
+19. [Acknowledgements](#acknowledgements)  
 
 ---
 
@@ -37,10 +51,19 @@ To revolutionize technical education globally by providing every aspiring engine
 - Accessible: Mobile-first experience lowers hardware and cost barriers.  
 
 ## 4. Features (Current / In Progress)
-- Rich informational landing site introducing mission, technology, team and approach.  
-- Structured content sections (About, Vision, Technology Integration, Impact, Future Outlook).  
-- Responsive Next.js App Router design with Tailwind CSS for dark/light readiness (currently defaults to dark).  
-- Modular component layout for future expansion into interactive demos.  
+<table>
+	<thead>
+		<tr><th>Area</th><th>Description</th><th>Status</th><th>Next Step</th></tr>
+	</thead>
+	<tbody>
+		<tr><td>Landing Narrative</td><td>Hero + structured educational sections</td><td>Implemented</td><td>Refine copy & accessibility review</td></tr>
+		<tr><td>Component Architecture</td><td>Modular React components (App Router)</td><td>Implemented</td><td>Add test coverage</td></tr>
+		<tr><td>Styling System</td><td>Tailwind CSS utility-first</td><td>Implemented</td><td>Establish design tokens</td></tr>
+		<tr><td>AR Preview Layer</td><td>Placeholder conceptual content</td><td>Pending</td><td>Evaluate WebXR vs Native</td></tr>
+		<tr><td>Simulation Engine</td><td>Real-time circuit feedback</td><td>Planned</td><td>Draft data model & solver</td></tr>
+		<tr><td>Cloud Persistence</td><td>Profiles, saved circuits</td><td>Planned</td><td>Define schema</td></tr>
+	</tbody>
+</table>
 
 ## 5. Services Offered (Concept Scope)
 | Service | Description |
@@ -51,16 +74,17 @@ To revolutionize technical education globally by providing every aspiring engine
 | Safe Workspace | Risk-free experimentation without physical damage or hazards. |
 
 ## 6. Technology Stack
-| Layer | Choice |
-|-------|--------|
-| Framework | Next.js 15 (App Router) |
-| Runtime | React 19 |
-| Styling | Tailwind CSS 4 (PostCSS pipeline) |
-| UI Elements | Headless UI, Heroicons |
-| Fonts | Geist (next/font) |
-| Planned AR | ARCore (Android), ARKit (iOS) integration (future native / WebXR bridge) |
-| Simulation Engine | Custom lightweight engine (future) |
-| Backend (Future) | Firebase / AWS for persistence & collaboration |
+| Layer | Choice | Rationale |
+|-------|--------|-----------|
+| Framework | Next.js 15 (App Router) | File-based routing, streaming, server components |
+| Runtime | React 19 | Concurrent features, future-proof for interactive AR panels |
+| Styling | Tailwind CSS 4 | Rapid iteration, consistent spacing/typography scale |
+| UI Elements | Headless UI, Heroicons | Accessible primitives without opinionated styling |
+| Fonts | Geist (next/font) | Automatic optimization & variable font control |
+| Planned AR | ARCore / ARKit / WebXR bridge | Device-native tracking & portability |
+| Simulation Engine | Custom lightweight solver | Fine-grained control over performance & accuracy |
+| Backend (Future) | Firebase / AWS | Realtime sync, auth, scalable storage |
+| Analytics (Future) | PostHog / Plausible | Privacy-friendly usage insights |
 
 ## 7. Architecture & Structure
 ```
@@ -90,18 +114,29 @@ Separation of concerns: each semantic content block lives in an isolated compone
 - `Stats`: Designed for future adoption metrics, learning outcomes or performance indicators.  
 
 ## 9. Getting Started (Local Development)
-Prerequisites: Node.js 18+ (recommended LTS). Ensure package manager (npm default) is available.
+Prerequisites:
+- Node.js 18+ (verify with `node -v`)
+- Git
+- A package manager (npm included by default)
 
-Install dependencies:
+Clone & install:
 ```bash
+git clone https://github.com/your-org/conn3d.git
+cd conn3d
 npm install
 ```
 
-Run development server:
+Development server:
 ```bash
 npm run dev
 ```
 Visit: http://localhost:3000
+
+Production build preview:
+```bash
+npm run build
+npm start
+```
 
 ### Directory Conventions
 - Use the `app/` directory for route-based composition (Next.js App Router).  
@@ -125,27 +160,77 @@ Basic flow:
 Environment variables (future): simulation backends, feature flags, analytics keys. None currently required.
 
 ## 12. Roadmap (Planned Enhancements)
-| Phase | Items |
-|-------|-------|
-| 1 | Refine landing content, add accessibility pass (WCAG AA), analytics instrumentation |
-| 2 | Prototype AR component embedding (WebXR or native bridge) |
-| 3 | Lightweight simulation engine integration + visual probe overlays |
-| 4 | User accounts, cloud persistence (Firebase / AWS), collaboration layer |
-| 5 | AI tutor module (adaptive guidance, circuit feedback) |
+| Phase | Milestones | Deliverables | Exit Criteria |
+|-------|-----------|--------------|---------------|
+| 1 | Foundation | Accessible landing, component audit, metrics baseline | CLS < 0.1, Lighthouse A11y > 95 |
+| 2 | AR Prototype | Basic placement of 3D components (stub interactions) | Stable 30+ FPS on mid-tier device |
+| 3 | Simulation MVP | Ohmic + reactive elements, live value overlays | < 10ms step calc for small circuits |
+| 4 | Persistence & Collab | Auth, save/load, share links | Multi-user edit latency < 300ms |
+| 5 | Intelligent Tutor | Contextual hints, adaptive challenges | 75%+ task success in user tests |
+| 6 | Advanced Components | MCUs, sensors, renewable modules | Verified component test suite |
+
+### AR & Simulation Conceptual Layers
+1. Scene Management (entity/component registry)  
+2. Tracking & Spatial Anchors (ARCore/ARKit abstraction)  
+3. Physics/Electrical Solver (incremental time steps)  
+4. Interaction Layer (gesture → semantic intent)  
+5. Visualization (probes, overlays, waveform inspectors)  
+6. Persistence Sync (CRDT or operational transforms)  
+
+### Data Model Draft (Planned)
+```ts
+Circuit {
+	id: string;
+	components: ComponentInstance[]; // typed refs
+	nets: Net[];                     // connectivity graph
+	metadata: { title?: string; version: number; createdAt: ISODate };
+}
+```
+
+> This model will evolve once simulation constraints and collaborative editing semantics are formalized.
+
+## Accessibility Checklist
+| Area | Status | Notes |
+|------|--------|-------|
+| Semantic Headings | In Progress | Ensure single H1, descending order |
+| Color Contrast | Pending Review | Add token palette & test contrasts |
+| Focus States | Basic | Need visible outline normalization |
+| Aria Labels | Pending | Add to interactive navigation elements |
+| Reduced Motion | Not Implemented | Add prefers-reduced-motion handling |
+
+## Performance Strategy
+| Layer | Intent |
+|-------|--------|
+| Code Splitting | Use dynamic import for heavy AR bundles |
+| Streaming | Leverage React Server Components where static narrative suffices |
+| Asset Policy | Prefer responsive images / vector icons (no raster for simple shapes) |
+| CSS | Tailwind JIT purging for minimal bundle |
+| Simulation | Web Worker / WASM exploration for isolation |
+| Caching | HTTP caching for static assets; future SW for offline library |
+
+Planned metrics: First Contentful Paint, Time to Interactive, Simulation Step Latency.
 
 ## 13. Contributing
-Contributions are welcome at this early narrative stage.
+Contributions are welcome.
 
-Proposed flow:
-1. Fork repository.  
-2. Create feature branch: `feat/<short-description>`  
-3. Ensure linting/style (Tailwind utility cleanliness; semantic JSX).  
-4. Open a pull request with a concise problem statement and screenshots where applicable.  
+Workflow:
+1. Fork repository  
+2. Branch naming: `feat/`, `fix/`, `chore/`, `docs/`  
+3. Commit convention (Conventional Commits): `feat(hero): add AR roadmap section`  
+4. Ensure build succeeds: `npm run build`  
+5. Open PR with: context, before/after (screenshots if UI), test notes  
 
-### Guidelines
-- Keep components focused and stateless where possible.  
-- Avoid premature abstraction—duplicate once, refactor on third use.  
-- Maintain accessibility: proper headings order, aria-labels for interactive elements, sufficient contrast.  
+Coding Guidelines:
+- Keep components cohesive; extract only after 2–3 repetitions.  
+- Prefer composition over inheritance.  
+- Enforce accessible markup (run automated Lighthouse / axe).  
+- Avoid global state until justified; lean on props & server components.  
+- Document non-trivial decisions in a short `DECISIONS.md` (future).  
+
+Security & Privacy (Future Phases):
+- Principle of least privilege for backend services.  
+- Input validation on circuit definitions.  
+- Opt-in analytics with anonymization.  
 
 ## 14. FAQs (Sample)
 | Question | Answer |
@@ -156,7 +241,7 @@ Proposed flow:
 | Is offline use supported? | Intended in future builds with local caching for component libraries. |
 
 ## 15. License
-License not yet specified. Add a LICENSE file (e.g., MIT, Apache 2.0) to clarify usage and contribution terms.
+License not yet specified. A recommendation is to adopt MIT for maximal openness or Apache 2.0 if explicit patent grant language is desired. Add a `LICENSE` file before first public alpha tagged release.
 
 ---
 
