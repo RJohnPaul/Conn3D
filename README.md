@@ -249,7 +249,7 @@ License not yet specified. A recommendation is to adopt MIT for maximal openness
 
 ---
 
-## Team (Nari Kootam)
+## Team
 Agilesh Arumugam • Madhesh H • Karan S • John Paul R
 
 Focused on making immersive, equitable engineering education a reality.
