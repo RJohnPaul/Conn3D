@@ -1,6 +1,6 @@
 # Conn3D (Connection 3D)
 
-![Home Dashboard](https://github.com/RJohnPaul/Healthlink/blob/53fa1bf4726e9299f1f30362dd13c7d643e92c7f/Template%20Example%20(3).png)
+![Home Dashboard](https://github.com/RJohnPaul/Conn3D/blob/262fa89432246a153e9399f6887100f36d9f90bd/starboy.png)
 
 ---
 
