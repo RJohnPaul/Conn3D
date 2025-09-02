@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "3DConn",
+  title: "Conn3D",
   description: "visualize labs with AR",
 };
 
