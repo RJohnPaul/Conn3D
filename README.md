@@ -1,5 +1,3 @@
-<div align="center">
-
 # Conn3D (Connection 3D)
 
 An immersive, mobile‑first Augmented Reality (AR) virtual electronics lab designed to bridge the gap between theoretical knowledge and practical engineering education.
