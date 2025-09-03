@@ -244,11 +244,6 @@ Security & Privacy (Future Phases):
 | Will advanced components (MCUs, sensors) be included? | Yes—phase expansion includes microcontrollers, renewable energy modules and more. |
 | Is offline use supported? | Intended in future builds with local caching for component libraries. |
 
-## 15. License
-License not yet specified. A recommendation is to adopt MIT for maximal openness or Apache 2.0 if explicit patent grant language is desired. Add a `LICENSE` file before first public alpha tagged release.
-
----
-
 ## Team
 Agilesh Arumugam • Madhesh H • Karan S • John Paul R
 
