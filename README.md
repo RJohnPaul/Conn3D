@@ -16,7 +16,7 @@ An immersive, mobile‑first Augmented Reality (AR) virtual electronics lab desi
 	<img alt="PRs" src="https://img.shields.io/badge/PRs-Welcome-success" />
 </p>
 
-<p align="center"><i>Project status: Early content and architectural scaffold. Core AR & simulation layers not yet implemented.</i></p>
+<p align="center"><i>Project status: Early content and architectural scaffold. Core AR & simulation layers implemented.</i></p>
 
 ---
 
@@ -125,8 +125,7 @@ Prerequisites:
 
 Clone & install:
 ```bash
-git clone https://github.com/your-org/conn3d.git
-cd conn3d
+git clone https://github.com/RJohnPaul/Conn3D.git .
 npm install
 ```
 
@@ -144,7 +143,8 @@ npm start
 
 ### Directory Conventions
 - Use the `app/` directory for route-based composition (Next.js App Router).  
-- Co-locate component-level styles or keep to utility-first Tailwind classes.  
+- Co-locate component-level styles or keep to utility-first Tailwind classes.
+- Go to the `AR Assets` folder to gain intel on the AR Codebase
 
 ## 10. Available Scripts
 | Script | Purpose |
@@ -251,15 +251,6 @@ License not yet specified. A recommendation is to adopt MIT for maximal openness
 
 ## Team
 Agilesh Arumugam • Madhesh H • Karan S • John Paul R
-
-Focused on making immersive, equitable engineering education a reality.
-
----
-
-## Acknowledgements
-- Next.js team for the App Router architecture.  
-- Tailwind CSS maintainers for rapid design iteration.  
-- Open-source ecosystem enabling accelerated prototyping.  
 
 ---
 
