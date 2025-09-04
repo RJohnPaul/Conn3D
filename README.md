@@ -1,4 +1,4 @@
-# Conn3D (Connection 3D)
+# Conn3D (Connection-3D)
 
 ![Home Dashboard](https://github.com/RJohnPaul/Conn3D/blob/262fa89432246a153e9399f6887100f36d9f90bd/starboy.png)
 
