@@ -38,7 +38,6 @@ An immersive, mobile‑first Augmented Reality (AR) virtual electronics lab desi
 15. [Contribution Guide](#13-contributing)  
 16. [FAQs](#14-faqs-sample)  
 17. [License](#15-license)  
-18. [Team](#team-nari-kootam)  
 19. [Acknowledgements](#acknowledgements)  
 
 ---
@@ -244,11 +243,7 @@ Security & Privacy (Future Phases):
 | Will advanced components (MCUs, sensors) be included? | Yes—phase expansion includes microcontrollers, renewable energy modules and more. |
 | Is offline use supported? | Intended in future builds with local caching for component libraries. |
 
-## Team
-Agilesh Arumugam • Madhesh H • Karan S • John Paul R
 
 ---
 
 For questions or collaboration inquiries, open an issue or start a discussion thread.
-# Conn3D
-# Conn3D-EEE
