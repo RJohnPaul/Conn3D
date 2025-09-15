@@ -1,6 +1,6 @@
 # Conn3D (Connection-3D)
 
-![Home Dashboard](https://github.com/RJohnPaul/Conn3D/blob/262fa89432246a153e9399f6887100f36d9f90bd/starboy.png)
+![Home Dashboard](https://github.com/RJohnPaul/Conn3D/blob/45e74934e32dbf64a9e1433391d5c0e569a835a8/starboy.png)
 
 ---
 
