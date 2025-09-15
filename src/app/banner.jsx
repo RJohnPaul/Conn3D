@@ -35,7 +35,7 @@ export default function Banner() {
         />
       </div>
       <p className="text-sm/6 text-gray-900 dark:text-gray-100">
-        Done for Hack for Humanity on September 2 in SRM Uni.{' '}
+        Done for HFH+CM on September 2 in SRM Uni.{' '}
       </p>
       <div className="flex flex-1 justify-end">
         <button 

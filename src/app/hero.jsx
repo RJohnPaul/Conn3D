@@ -44,7 +44,7 @@ export default function Hero() {
             <div className="flex">
               <div className="relative flex items-center gap-x-4 rounded-full bg-white dark:bg-gray-800 px-4 py-1 text-sm/6 text-gray-600 dark:text-gray-300 ring-1 ring-gray-900/10 dark:ring-gray-700 hover:ring-gray-900/20 dark:hover:ring-gray-500">
                 <span className="font-semibold text-indigo-600">
-                  We’re doing this for 'Hack for Humanity'
+                  We’re doing this for 'HFH+CM'
                 </span>
                 <a href="#" className="flex items-center gap-x-1">
                   <ChevronRightIcon
